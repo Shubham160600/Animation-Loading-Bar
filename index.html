@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Bar Animation</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Center the loading bar on the page */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        /* Container for the loading bar */
+        .loading-bar {
+            width: 300px;
+            height: 20px;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* The actual progress bar */
+        .loading-bar-progress {
+            width: 0;
+            height: 100%;
+            background-color: #76c7c0;
+            border-radius: 10px;
+            position: absolute;
+            animation: load 2s infinite; /* Animation applied here */
+        }
+
+        /* Keyframes for the loading animation */
+        @keyframes load {
+            0% {
+                width: 0;
+            }
+            50% {
+                width: 100%;
+            }
+            100% {
+                width: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-bar">
+        <div class="loading-bar-progress"></div>
+    </div>
+</body>
+</html>
