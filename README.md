@@ -27,27 +27,6 @@ https://github.com/user-attachments/assets/7a0604fd-03c0-4e7d-a407-20e627db59a9
 
 Copy the entire HTML file into your project. The loading bar will automatically center itself on the page.
 
-### Customization
-
-Modify the CSS variables to customize the loading bar:
-
-/* Change dimensions */
-.loading-bar {
-    width: 300px;    /* Adjust width */
-    height: 20px;    /* Adjust height */
-}
-/* Modify colors */
-.loading-bar {
-    background-color: #e0e0e0;    /* Background color */
-}
-.loading-bar-progress {
-    background-color: #76c7c0;    /* Progress bar color */
-}
-/* Adjust animation speed */
-.loading-bar-progress {
-    animation: load 2s infinite;    /* Change '2s' to desired duration */
-}
-
 ## Browser Support
 
 Works in all modern browsers:
